@@ -34,7 +34,7 @@ object Iso15924 extends StringEnum[Iso15924] with StringPlayJsonValueEnum[Iso159
     */
   def withName(code: String): Iso15924 =
     values.find(_.value == code)
-      .getOrElse(throw new IllegalArgumentException(s"Unknown script '$code'"))
+      .getOrElse(throw new NoSuchElementException(s"Unknown script '$code'"))
 
   /***
     * The values this enum can assume. This is required to be part of the public API by Enumeratum.
