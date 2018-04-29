@@ -26,11 +26,5 @@ class Iso639_3Spec extends WordSpecLike with Matchers {
         Iso639_3.withValue(lang.value) should===(lang)
       }
     }
-
-    "have some number of associated scripts" in {
-      Iso639_3.values.foreach { lang =>
-        lang.scripts should not be empty
-      }
-    }
   }
 }
