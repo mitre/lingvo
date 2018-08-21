@@ -9,7 +9,7 @@ Lingvo enumerations are:
 Language codes used in programs are typically handled one of two ways:
 
 1. stringified representation
-1. closed-source enumerations of language codes 
+2. closed-source enumerations of language codes
 
 Both of these leave a lot to be desired. By using a stringified representation, a consumer needs to validate that a string is a valid code. By using made-to-order enumerations of ISO codes, a consumer is unlikely to be able to use these codes to consume results. 
 
@@ -38,5 +38,7 @@ println(Json.toJson(Iso639_3.English)) // {"value": "eng"}
 ```
 
 ### Authors
+
+The authors' affiliations with the MITRE Corporation is provided for identification purposes only, and is not intended to convey or imply MITRE's concurrence with, or support for, the positions, opinions or viewpoints expressed by the authors.
 
 - [Elijah Rippeth](mailto:erippeth@mitre.org)
