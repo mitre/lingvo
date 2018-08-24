@@ -46,3 +46,5 @@ println(Json.toJson(Iso639_3.English)) // {"value": "eng"}
 Approved for Public Release; Distribution Unlimited. Case Number 18-2247.
 
 The authors' affiliations with the MITRE Corporation is provided for identification purposes only, and is not intended to convey or imply MITRE's concurrence with, or support for, the positions, opinions or viewpoints expressed by the authors.
+
+Copyright © 2018, The MITRE Corporation. All rights reserved.
