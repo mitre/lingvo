@@ -3,13 +3,15 @@
  */
 
 package org.mitre.lingvo.languages
-import enumeratum.values.{StringEnum, StringEnumEntry, StringPlayJsonValueEnum}
+import enumeratum.values.{ StringEnum, StringEnumEntry, StringPlayJsonValueEnum }
 import org.mitre.lingvo.scripts.Iso15924
 import scala.collection.immutable
+
 /***
   * The interface which describes languages according to the ISO 6393 standard.
   */
 sealed trait Iso639_3 extends StringEnumEntry {
+
   /***
     * The ISO code of the language. The property name `value` is required for JSON
     * serialization supported by EnumeratumPlay.
@@ -22,10 +24,12 @@ sealed trait Iso639_3 extends StringEnumEntry {
   def value: String
 
 }
+
 /***
   * The companion object which contains all the relevant enumerations of languages.
   */
 case object Iso639_3 extends StringEnum[Iso639_3] with StringPlayJsonValueEnum[Iso639_3] {
+
   /***
     * The values this enum can assume. This is required to be part of the public API by Enumeratum.
     */
@@ -42,7 +46,7 @@ case object Iso639_3 extends StringEnum[Iso639_3] with StringPlayJsonValueEnum[I
   case object Ari extends Iso639_3 {
     final val value: String = "aac"
   }
-  
+
   case object Amal extends Iso639_3 {
     final val value: String = "aad"
   }
@@ -20434,7 +20438,7 @@ case object Iso639_3 extends StringEnum[Iso639_3] with StringPlayJsonValueEnum[I
     final val value: String = "rhp"
   }
 
-  case object IndianRiang  extends Iso639_3 {
+  case object IndianRiang extends Iso639_3 {
     final val value: String = "ria"
   }
 
