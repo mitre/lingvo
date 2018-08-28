@@ -4,8 +4,8 @@
 
 package org.mitre.lingvo.languages
 
-import org.scalatest.{Matchers, WordSpecLike}
-import play.api.libs.json.{JsSuccess, Json}
+import org.scalatest.{ Matchers, WordSpecLike }
+import play.api.libs.json.{ JsSuccess, Json }
 
 class Iso639_3Spec extends WordSpecLike with Matchers {
   "An ISO 639-3 language" should {
@@ -16,7 +16,7 @@ class Iso639_3Spec extends WordSpecLike with Matchers {
 
         Json.fromJson[Iso639_3](json) match {
           case JsSuccess(`lang`, _) => `lang` should ===(lang)
-          case _ => fail(s"Language '${}' did not (de)serialize correctly.")
+          case _                    => fail(s"Language '${}' did not (de)serialize correctly.")
         }
       }
     }
@@ -27,7 +27,7 @@ class Iso639_3Spec extends WordSpecLike with Matchers {
 
     "get enumerations by value" in {
       Iso639_3.values.foreach { lang =>
-        Iso639_3.withValue(lang.value) should===(lang)
+        Iso639_3.withValue(lang.value) should ===(lang)
       }
     }
   }
