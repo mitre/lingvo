@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2018 The MITRE Corporation. All rights reserved.
+ */
+
 package org.mitre.lingvo.languages
 
 import org.scalatest.{Matchers, WordSpecLike}
