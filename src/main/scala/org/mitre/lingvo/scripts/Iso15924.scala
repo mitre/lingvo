@@ -4,7 +4,7 @@
 
 package org.mitre.lingvo.scripts
 
-import enumeratum.values.{ StringEnum, StringEnumEntry, StringPlayJsonValueEnum }
+import enumeratum.values.{StringEnum, StringEnumEntry, StringPlayJsonValueEnum}
 
 import scala.collection.immutable
 
@@ -39,14 +39,14 @@ object Iso15924 extends StringEnum[Iso15924] with StringPlayJsonValueEnum[Iso159
     * @return the script whose value is equal to `name` if it exists.
     */
   def withName(code: String): Iso15924 =
-    values
-      .find(_.value == code)
+    values.find(_.value == code)
       .getOrElse(throw new NoSuchElementException(s"Unknown script '$code'"))
 
   /***
     * The values this enum can assume. This is required to be part of the public API by Enumeratum.
     */
   val values: immutable.IndexedSeq[Iso15924] = findValues
+
 
   case object Adlam extends Iso15924 {
     final val value: String = "adlm"
@@ -600,7 +600,7 @@ object Iso15924 extends StringEnum[Iso15924] with StringPlayJsonValueEnum[Iso159
     final val value: String = "prti"
   }
 
-  case object ReservedStart extends Iso15924 {
+  case object ReservedStart  extends Iso15924 {
     final val value: String = "qaaa"
   }
 
@@ -780,7 +780,7 @@ object Iso15924 extends StringEnum[Iso15924] with StringPlayJsonValueEnum[Iso159
     final val value: String = "visp"
   }
 
-  case object WarangCiti extends Iso15924 {
+  case object WarangCiti  extends Iso15924 {
     final val value: String = "wara"
   }
 
