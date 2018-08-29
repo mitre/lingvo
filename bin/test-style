@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+. "$(dirname $0)/util.sh"
+
+runSbt  compile:scalafmt \
+        test:scalafmt \
+        headerCheck \
+        test:headerCheck
