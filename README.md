@@ -1,4 +1,4 @@
-# lingvo | [![Build Status](https://travis-ci.org/mitre/lingvo.svg?branch=master)](https://travis-ci.org/mitre/lingvo)
+# lingvo [![Build Status](https://travis-ci.org/mitre/lingvo.svg?branch=master)](https://travis-ci.org/mitre/lingvo)
 
 Lingvo is a package containing enumerations of various ISO codes related to language, including a considerable amount of the ISO 639-3 and ISO 15924 standards.
 
