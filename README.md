@@ -37,6 +37,15 @@ import org.mitre.lingvo.languages.Iso639_3
 println(Json.toJson(Iso639_3.English)) // {"value": "eng"}
 ```
 
+### As a dependency
+
+#### sbt
+
+```
+libraryDependencies += "org.mitre" %% "lingvo" % "0.1.0"
+```
+
+
 ### Authors
 
 - [Elijah Rippeth](mailto:erippeth@mitre.org)
